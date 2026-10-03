@@ -1,0 +1,8 @@
+# Pliki PDF
+*.pdf
+
+# Folder z rozwiazaniami (np. lista_1_solution, solutions)
+*solution*/
+
+# Maven: wyniki builda
+target/
