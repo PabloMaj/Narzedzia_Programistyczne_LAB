@@ -1,0 +1,11 @@
+name: "grade-report"
+services:
+  grade-report:
+    image: grade-report:1
+    container_name: "grade-report"
+    environment:
+      # aplikacja wczyta oceny z tego pliku zamiast z pliku w zasobach
+      GRADES_FILE: "/data/grades.csv"
+    volumes:
+      # katalog hosta ./data jest widoczny w kontenerze jako /data
+      - "./data:/data"
